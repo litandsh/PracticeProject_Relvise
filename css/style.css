@@ -71,7 +71,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*---END reset style---------------*/
+body {
+    font-family: "Montserrat";
+}
+
 .wrapper {
     min-height: 100%;
     overflow: hidden;
+}
+
+[class*=__container] {
+    max-width: 1046px;
+    margin: 0 auto;
 }
