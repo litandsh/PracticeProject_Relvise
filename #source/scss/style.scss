@@ -1,15 +1,84 @@
 @import 'resetstyle.scss';
 
+$breakpoint__xxl: 1200px;
+$breakpoint__xl: 1024px;
+$breakpoint__md: 767px;
+$breakpoint__sm: 576px;
+
+//*----------------------------------------------
 body {
     font-family: 'Montserrat';
+    color: #252B42;
 };
 
 .wrapper {
     min-height: 100%;
     overflow: hidden;
 }
-
+// *---------------------------------------------------
 [class*="__container"]{
-    max-width: 1046px;
+    max-width: 1016px;
+    padding: 0 15px;
     margin: 0 auto;
 }
+
+//*--Header Styles------------------
+
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+		&__container {}
+		&__body {
+            display: flex;
+            min-height: 104px;
+            align-items: center;
+        }
+		&__logo {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.33;
+            letter-spacing: 0.1px;
+            color: inherit;
+        }
+		&__menu {
+            margin: 0px 0px 0px 133px;
+            @media (max-width: $breakpoint__md) {
+                margin: 0px 0px 0px 80px;
+            }
+            @media (max-width: $breakpoint__sm) {
+                margin: 0px 0px 0px 30px;
+            }
+        }
+}
+.menu {
+    padding: 10px 0;
+		&__list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+		&__item {
+           &:not(:last-child){
+            margin: 0px 21px 0px 0px;
+           }
+        }
+		&__link {
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.2px;
+            color: #737373;
+            line-height: 171%;
+            &:hover{
+                text-decoration: underline;
+                opacity: 70%;
+            }
+            @media (max-width: $breakpoint__sm) {
+                font-size: 18px;
+            }
+        }
+}
+
+
+//*--End Header Styles------------------
