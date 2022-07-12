@@ -14,6 +14,8 @@ body {
 .wrapper {
     min-height: 100%;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 // *---------------------------------------------------
 [class*="__container"]{
@@ -25,8 +27,14 @@ body {
 //*--Header Styles------------------
 
 .header {
+    background-image: url(/img/content/mainblock/cover.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
     position: absolute;
     width: 100%;
+    height: 100%;
     left: 0;
     top: 0;
     z-index: 50;
@@ -82,3 +90,63 @@ body {
 
 
 //*--End Header Styles------------------
+
+//*--Main Styles---------------------------
+
+.page {
+    z-index: 60;
+    flex: 1 1 auto;
+    &__main-block {}
+}
+.main-block {
+    position: relative;
+    &__container {}
+    &__body {
+        padding: 184px 0px 191px 0px;
+    }
+    &__title {
+        font-size: 58px;
+        font-weight: 800;
+        letter-spacing: 0.2px;
+        color: #252B42;
+        margin-bottom: 35px;
+        max-width: 509px;
+    }
+    &__text {
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+        color: #737373;
+        margin-bottom: 35px;
+        max-width: 376px;
+    }
+    &__buttons {
+        display: flex;
+        column-gap: 10px;
+    }
+    &__button {
+        color: #fff;
+        background-color: #FF7B47;
+        border-radius: 50px;
+        padding: 10px 36px;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        line-height: 2;
+        &_border {
+            border: solid 2px #0D5C63;
+            color: #0D5C63;
+            background: rgba(161,21,207, 0.0)
+            
+        }
+    }
+}
+
+
+//*--End Main Styles---------------------------
+
+//*--Footer Styles-----------------------
+
+
+
+//*--End Footer Styles-----------------------/
