@@ -235,7 +235,6 @@ body {
     }
 }
 .advantages {
-    &__container {}
     &__body {
         display: flex;
         align-items: center;
@@ -308,6 +307,79 @@ body {
 }
 
 //*---End Advanteges Styles--------------------
+
+//* Practices Styles--------------------------
+
+.page {
+    &__practice {
+        padding: 125px 0px 80px 0px;
+    }
+}
+.practice {
+    &__container {}
+    &__header {
+        margin: 0px 0px 45px 0px;
+    }
+    &__body {
+        margin: 0 -5px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: 983px) {
+            column-gap: 20px;
+            row-gap: 20px;
+        }
+    }
+    &__column {
+        padding: 0px 5px;
+        flex: 0 1 25%;
+        align-self: center;
+    }
+    &__item {
+        text-align: center;
+    }
+}
+
+.item-practice {
+    
+    &__link {
+        
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #252B42;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.4;
+        color: #737373;
+        padding-top: 15px;
+    }
+    &__image {
+        display: block;
+        
+    }
+}
+
+._ibg {
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // position: relative;
+}
+
+.item-practice__content {
+    padding: 30px;
+    background-color: #fff;
+    letter-spacing: 0.1px;
+}
+
+//* ---End Practices Styles--------------------------
+
 
 //*--Footer Styles-----------------------
 
