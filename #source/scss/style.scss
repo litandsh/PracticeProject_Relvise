@@ -480,6 +480,23 @@ body {
 
 //*--End Whoweare styles----------------------------
 
+//*--Clients Styles-------------------------
+
+.clients {
+    background-color: #fff;
+    padding: 50px 0px 50px 0px;
+    &__items {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 40px;
+        row-gap: 40px;
+    }
+}
+
+
+//*--End Clients Styles---------------------
 
 //*--Footer Styles-----------------------
 
