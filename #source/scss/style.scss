@@ -495,8 +495,104 @@ body {
     }
 }
 
-
 //*--End Clients Styles---------------------
+
+// * Subscribee Styles---------------
+
+.page {
+    &__subscribe {
+        padding: 20px 0px 20px 0px;
+    }
+}
+.subscribe {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        background: #252B42;
+        bottom: 0;
+        width: 100%;
+        height: 77px;
+        left: 0;
+    }
+    &__title {
+        max-width: 266px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 24px;
+        letter-spacing: 0.1px;
+        line-height: 133%;
+        @media (max-width: 852px) {
+            max-width: none;
+        }
+    }
+    &__input {
+        flex: 1 1 auto;
+        min-height: 58px;
+        padding: 0 20px;
+        border: 1px solid #e6e6e6;
+        border-radius: 5px 0px 0px 5px;
+        color: #737373;
+        &:focus {
+            color: #000;
+        }
+        @media (max-width: 522px) {
+            border-radius: 5px 5px 5px 5px;
+            width: 100%;
+        }
+    }
+    &__button {
+        background-color: #FF7B47;
+        color: #fff;
+        border-radius: 0px 5px 5px 0px;
+        display: flex;
+        min-height: 58px;
+        align-items: center;
+        padding: 0px 22.5px 0px 22.5px;
+        justify-content: center;
+        text-align: center;
+        @media (max-width: 852px) {
+            padding: 0px 10px 0px 10px;
+        }
+        @media (max-width: 522px) {
+            border-radius: 5px 5px 5px 5px;
+            width: 100%;
+        }
+    }
+}
+.subrscribe {
+    &__body {
+        position: relative;
+        z-index: 2;
+        margin: 0 30px;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 50px;
+        background-color: #17213C;
+        align-items: center;
+        border-radius: 2px;
+        @media (max-width: 852px) {
+            // flex-direction: column;
+            flex-wrap: wrap;
+        }
+    }
+    &__form {
+        flex: 0 1 50%;
+        display: flex;
+        align-items: center;
+        @media (max-width: 852px) {
+            margin-top: 20px;
+            flex: 0 1 100%;
+        }
+        @media (max-width: 522px) {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    }
+}
+
+
+// * End Subscribee Styles---------------
 
 //*--Footer Styles-----------------------
 
