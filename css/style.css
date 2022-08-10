@@ -756,3 +756,106 @@ body {
         row-gap: 20px;
     }
 }
+
+.page__getintouch {
+    padding: 80px 0px;
+}
+
+.getintouch__body {
+    margin-top: 80px;
+}
+.getintouch__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+@media (max-width: 887px) {
+    .getintouch__items {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+}
+.getintouch__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 33.333%;
+            flex: 1 1 33.333%;
+    padding: 50px 40px;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #fff;
+}
+@media (max-width: 887px) {
+    .getintouch__item {
+        width: 100%;
+    }
+}
+.getintouch__email {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+}
+
+.item-getintouch__emails {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px 15px 0px 15px;
+}
+.item-getintouch__emails a {
+    color: #252B42;
+}
+.item-getintouch__label {
+    margin: 15px 0px 15px 0px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+}
+.item-getintouch__button {
+    padding: 10px 20px;
+    line-height: 1.71;
+    font-weight: 600;
+    border: 1px solid #FF7B47;
+    display: inline-block;
+    border-radius: 5px;
+    color: #FF7B47;
+}
+.item-getintouch__button:hover {
+    color: #fff;
+    background-color: #FF7B47;
+}
+
+.item__logo {
+    margin-bottom: 15px;
+}
+
+.item-getintouch_marked {
+    background-color: #252B42;
+    padding: 80px 0px 80px 0px;
+}
+.item-getintouch_marked a {
+    color: #fff;
+}
+.item-getintouch_marked .item-getintouch__label {
+    color: #fff;
+}
+
+.button_marked {
+    border: 1px solid #fff;
+}
+.button_marked:hover {
+    background-color: #fff;
+    color: #252B42;
+}
