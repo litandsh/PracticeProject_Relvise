@@ -610,7 +610,6 @@ body {
     &__items {
         display: flex;
         align-items: center;
-        // flex-wrap: wrap;
         @media (max-width: 887px) {
             flex-direction: column;
             
@@ -694,6 +693,62 @@ body {
 
 //* End Getintouch styles----------------------
 
+//* Contact styles------------------------
+
+.page {
+    &__contact {}
+}
+.contact {
+    background-color: #fff;
+    padding: 40px 0px;
+}
+.contact {
+    &__container {}
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width: 578px) {
+            flex-direction: column;
+            row-gap: 15px;
+        }
+    }
+    &__content {}
+    &__title {
+        font-weight: 700;
+        letter-spacing: 0.1px;
+        font-size: 24px;
+        line-height: 1.3;
+        &:not(:last-child) {
+            margin: 0px 0px 10px 0px;
+        }
+    }
+    &__text {
+        color: #737373;
+        line-height: 1.42;
+    }
+    &__button {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        min-height: 58px;
+        border-radius: 5px;
+        background: #FF7B47;
+        color: #fff;
+        padding: 5px 40px;
+        transition: background-color 0.3s ease 0s;
+        &:hover {
+            background-color: #b95a35;
+        }
+        @media (max-width: 578px) {
+            width: 100%;
+        }
+    }
+}
+
+
+//* End Contact styles------------------------
 
 //*--Footer Styles-----------------------
 

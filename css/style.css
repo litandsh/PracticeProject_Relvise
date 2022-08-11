@@ -859,3 +859,70 @@ body {
     background-color: #fff;
     color: #252B42;
 }
+
+.contact {
+    background-color: #fff;
+    padding: 40px 0px;
+}
+
+.contact__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+@media (max-width: 578px) {
+    .contact__body {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        row-gap: 15px;
+    }
+}
+.contact__title {
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    font-size: 24px;
+    line-height: 1.3;
+}
+.contact__title:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+}
+.contact__text {
+    color: #737373;
+    line-height: 1.42;
+}
+.contact__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 58px;
+    border-radius: 5px;
+    background: #FF7B47;
+    color: #fff;
+    padding: 5px 40px;
+    -webkit-transition: background-color 0.3s ease 0s;
+    -o-transition: background-color 0.3s ease 0s;
+    transition: background-color 0.3s ease 0s;
+}
+.contact__button:hover {
+    background-color: #b95a35;
+}
+@media (max-width: 578px) {
+    .contact__button {
+        width: 100%;
+    }
+}
