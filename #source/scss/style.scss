@@ -39,7 +39,6 @@ body {
     left: 0;
     top: 0;
     z-index: 50;
-   		&__container {}
 		&__body {
             display: flex;
             min-height: 104px;
@@ -97,11 +96,9 @@ body {
 .page {
     z-index: 60;
     flex: 1 1 auto;
-    &__main-block {}
 }
 .main-block {
     position: relative;
-    &__container {}
     &__body {
         padding: 184px 0px 191px 0px;
     }
@@ -207,7 +204,6 @@ body {
     > *:not(:last-child){
         margin: 0px 0px 10px 0px;
     }
-    &__icon {}
     &__title {
         font-weight: 700;
         font-size: 24px;
@@ -316,7 +312,6 @@ body {
     }
 }
 .practice {
-    &__container {}
     &__header {
         margin: 0px 0px 45px 0px;
     }
@@ -342,9 +337,6 @@ body {
 }
 
 .item-practice {
-    
-    &__link { 
-    }
     &__title {
         font-weight: 700;
         font-size: 16px;
@@ -374,11 +366,6 @@ body {
 
 //*--Whoweare styles----------------------------
 
-.page {
-    &__whoweare {
-
-    }
-}
 .whoweare {
     padding: 100px 0px 100px 0px;
     @media (max-width: 963px) {
@@ -443,12 +430,6 @@ body {
         color: #737373;
         margin: 0px 0px 50px 0px;
     }
-    &__items {}
-    &__item {}
-}
-.header-block {
-    &__title {}
-    &__sub-title {}
 }
 .item-whoweare {
     display: flex;
@@ -602,8 +583,6 @@ body {
     }
 }
 .getintouch {
-    &__container {}
-    &__header {}
     &__body {
         margin-top: 80px;
     }
@@ -695,15 +674,11 @@ body {
 
 //* Contact styles------------------------
 
-.page {
-    &__contact {}
-}
 .contact {
     background-color: #fff;
     padding: 40px 0px;
 }
 .contact {
-    &__container {}
     &__body {
         display: flex;
         align-items: center;
@@ -713,7 +688,6 @@ body {
             row-gap: 15px;
         }
     }
-    &__content {}
     &__title {
         font-weight: 700;
         letter-spacing: 0.1px;
@@ -757,7 +731,6 @@ body {
         background: #17213C;
         padding: 50px 0px;
     }
-    &__container {}
     &__main {
         display: flex;
         @media (max-width: 820px) {
@@ -783,8 +756,6 @@ body {
             margin-bottom: 10px;
         }
     }
-    &__menu {}
-    &__contacts {}
     &__bottom {
         padding: 25px 0px;
     }
@@ -795,7 +766,6 @@ body {
         line-height: 1.7;
         letter-spacing: 0.2px;
     }
-    &__social {}
 }
 
 .footer-bottom {
@@ -810,7 +780,6 @@ body {
 }
 
 .menu-footer {
-    &__list {}
     &__item {
         &:not(:last-child) {
             margin-bottom: 10px;
